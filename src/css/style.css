@@ -1,15 +1,18 @@
+html{
+    font-size: 62.5%;
+}
 body{
     background-color: var(--Light-gray);
-    height: 100vh;
+    min-height: 100vh;
     display:flex;
     justify-content:center;
     align-items: center;
 }
 
 .container{
-    width: 320px;
-    height: 500px;
-    border-radius: 25px;
+    width: 32rem;
+    min-height: 50rem;
+    border-radius: 2.5rem;
     display: flex;
     flex-direction: column;
     align-items: center;
@@ -17,43 +20,43 @@ body{
 }
 .container .qr-code-container{
     width: 100%;
-    padding:20px 20px 0 20px;
+    padding:2rem 2rem 0 2rem;
 
 }
 .container .qr-code-container img{
     width: 100%;
-    border-radius: 17px;
+    border-radius: 1.7rem;
 }
 .container  .title{
     color:var(--Dark-blue);
     text-align: center;
     font-family: 'Outfit', sans-serif;
     font-weight: 700;
-    font-size: 20px;
-    line-height: 30px;
-    padding: 20px 40px;
+    font-size: 2rem;
+    line-height: 3rem;
+    padding: 2rem 4rem;
 }
 .container  .text{
     font-family: 'Outfit', sans-serif;
     font-weight: 400;
     text-align: center;
-    font-size: 14px;
-    padding: 0 45px;
+    font-size: 1.4rem;
+    padding: 0 4.5rem;
     color:var(  --Grayish-blue)
 }
 @media (max-width:500px){
     body{
-        padding: 30px;
+        padding: 3rem;
     }
     .container {
-       width: 375px;
-       height:480px ;
+       width: 37.5rem;
+       /* height:48rem ; */
     }
     .container .title{
-        font-size:20px;
-        padding-top:10px;
+        font-size:2rem;
+        padding-top:1rem;
     }
     .container .text{
-        font-size: 14px;
+        font-size: 1.4rem;
     }
 }
